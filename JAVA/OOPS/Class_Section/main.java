@@ -30,8 +30,7 @@ class Student{
 }
 public class main {
     public static void main(String[] args) {
-        Student st =new Student("shiva",20,"05J2");
-
+        Student st =new Student("Shiva",20,"05J2");
         Student st1=new Student("Ayush",23,"05J3");
         st.display();
         st1.display();
