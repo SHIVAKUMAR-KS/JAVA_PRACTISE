@@ -1,5 +1,7 @@
 package Car_Management_ShowRoom;
 
+import java.util.Scanner;
+
 public class Car implements utility{
     String car_name;
     String car_color;
@@ -21,6 +23,22 @@ public class Car implements utility{
 
     @Override
     public void getDetail() {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("******Enter Car Detail*******");
+        System.out.println();
+        System.out.print("Enter car name:");
+        car_name=sc.nextLine();
+        System.out.print("Enter car color:");
+        car_color=sc.nextLine();
+        System.out.print("Enter fuel type:");
+        car_fuel_type=sc.nextLine();
+        System.out.print("Enter car price:");
+        car_price=sc.nextInt();
+        System.out.print("Enter car Type:");
+        car_type=sc.nextLine();
+        System.out.print("Enter car transmission:");
+        car_transmission=sc.nextLine();
+
 
     }
 }
