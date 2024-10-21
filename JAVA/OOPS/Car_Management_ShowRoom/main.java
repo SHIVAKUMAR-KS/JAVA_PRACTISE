@@ -30,7 +30,31 @@ public class main {
             int employe_counter=0;
             int choice=100;
             while(choice !=0){
+                    main_menu();
+                    choice=sc.nextInt();
 
+                    while(choice!=9 && choice!=0){
+                        switch (choice){
+                            case 1:
+                                showRooms[showRoom_counter]=new ShowRoom();
+                                showRooms[showRoom_counter].setDetail();
+                                showRoom_counter++;
+                                System.out.println();
+                                System.out.println("1].ADD NEW SHOWROOM");
+                                System.out.println("9].GO BACK TO MAIN MENU");
+                                choice=sc.nextInt();
+                                break;
+                            case 2:
+                                employees[employe_counter]=new Employee();
+                                employees[employe_counter].setDetail();
+                                employe_counter++;
+                                System.out.println();
+                                System.out.println("3].ADD NEW Employee");
+                                System.out.println("9].GO BACK TO MAIN MENU");
+                                choice=sc.nextInt();
+                                break;
+                        }
+                    }
             }
     }
 }
