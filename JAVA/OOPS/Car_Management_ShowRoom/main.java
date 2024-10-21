@@ -73,6 +73,25 @@ public class main {
                                 System.out.println("0].EXIT");
                                 choice=sc.nextInt();
                                 break;
+                            case 5:
+                                for(int i=0;i<employe_counter;i++){
+                                    employees[i].getDetail();
+                                    System.out.println();
+                                    System.out.println();
+                                }
+                                System.out.println();
+                                System.out.println("9]. GO BACK TO MAIN MENU");
+                                System.out.println("0].EXIT");
+                                choice=sc.nextInt();
+                                break;
+                            case 6:
+                                for(int i=0;i<car_counter;i++){
+                                    cars[i].getDetail();
+                                    System.out.println();
+                                    System.out.println();
+                                }
+                                System.out.println();
+
 
                         }
                     }
