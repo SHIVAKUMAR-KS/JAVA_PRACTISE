@@ -49,10 +49,31 @@ public class main {
                                 employees[employe_counter].setDetail();
                                 employe_counter++;
                                 System.out.println();
-                                System.out.println("3].ADD NEW Employee");
+                                System.out.println("2].ADD NEW Employee");
                                 System.out.println("9].GO BACK TO MAIN MENU");
                                 choice=sc.nextInt();
                                 break;
+                            case 3:
+                                cars[car_counter]=new Car();
+                                cars[car_counter].setDetail();
+                                car_counter++;
+                                System.out.println();
+                                System.out.println("3].ADD NEW CAR");
+                                System.out.println("9].GO BACK TO MAIN MENU");
+                                choice=sc.nextInt();
+                                break;
+                            case 4:
+                                for(int i=0;i<showRoom_counter;i++){
+                                    showRooms[i].getDetail();
+                                    System.out.println();
+                                    System.out.println();
+                                }
+                                System.out.println();
+                                System.out.println("9].GO BACK TO MAIN MENU");
+                                System.out.println("0].EXIT");
+                                choice=sc.nextInt();
+                                break;
+
                         }
                     }
             }
